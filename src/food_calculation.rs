@@ -18,23 +18,3 @@ pub fn calculate_food_amount(dog_weight: f64) -> f64 {
 fn map(value: f64, from_low: f64, from_high: f64, to_low: f64, to_high: f64) -> f64 {
     (value - from_low) * (to_high - to_low) / (from_high - from_low) + to_low
 }
-
-#[allow(dead_code)]
-pub enum FoodBrand {
-    OpenFarms,
-    Purina,
-    Genaric,
-
-}
-
-#[allow(dead_code)]
-#[allow(unused)]
-pub fn slect_food_type(selection: FoodBrand) {
-    let food_brand = match selection {
-        FoodBrand::OpenFarms => println!("got open farms"),
-        FoodBrand::Purina => println!("got purina"),
-        FoodBrand::Genaric => println!("got genaric"),
-    };
-
-
-}

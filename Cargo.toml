@@ -1,5 +1,5 @@
 [package]
-name = "dog_food_calculator_v2"
+name = "dog_food_calculator"
 version = "0.1.0"
 authors = ["macro"]
 edition = "2018"

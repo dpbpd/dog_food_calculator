@@ -37,41 +37,9 @@ fn get_dog_weight() -> f64 {
         }
     }
 }
-#[allow(dead_code)]
-fn display_food_brands() {
-    let mut num = 1;
-    let brands = vec!["Open Farms", "Purina", "Genaric"];
-    for brand in brands.iter() {
-        println!("{}. {}",num, brand);
-        num += 1;
-    };
-}
 
 fn main() {  // select food brand
-    /*
-    loop {
-        display_food_brands();
-        let food_brand = com::request_response("Please pick your food brand").to_string();
-        let brand: u32 = match food_brand.trim().parse() {
-            Ok(num) => num,
-            Err(_) => {
-                println!("{} is not a number.", food_brand.trim());
-                continue
-            }
-        };
-
-        
-        println!("food brand {}", brand);
-        if brand == 1 {
-            break
-        };
-    };
-    */
-
-    // enter ideal weight
-    //let optimal_weight = com::request_response("please enter Vereranarians recommended weight");
-
-    // store data so not to ask every time
+    
     loop {
         let food_amount = calculate_food_amount(get_dog_weight());
         if food_amount == 0.0 {
