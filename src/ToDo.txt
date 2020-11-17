@@ -1,0 +1,13 @@
+1. so i want to get a choice of dog food brands
+    - how do i want to structure the different types of dog food - enum
+
+
+
+
+prompt choices and ask for response
+
+store results in file
+
+store optimal dog weight
+
+diet calculation
